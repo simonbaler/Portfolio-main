@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon Baler — Portfolio</title>
+    <!-- GitHub Pages SPA fallback: redirects to root -->
+    <script type="text/javascript">
+      var segmentCount = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/' + l.pathname.split('/').slice(1 + segmentCount).join('/').replace(/&/g, '~and~') +
+        (l.search ? '?' + l.search.split('&').join('~and~') : '')
+      );
+    </script>
+  </head>
+  <body>
+    <h1>Page not found — sending you home...</h1>
+  </body>
+</html>

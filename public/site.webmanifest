@@ -1,0 +1,16 @@
+{
+  "name": "Simon Baler — Software Engineer Portfolio",
+  "short_name": "Simon Baler",
+  "description": "Portfolio of Simon Baler — Software Engineer, AI Engineer, and Python Full-Stack Developer.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#ff2a2a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
