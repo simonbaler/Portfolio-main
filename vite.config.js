@@ -22,5 +22,12 @@ export default defineConfig(({ command }) => {
   return {
     base,
     plugins: [react(), tailwindcss()],
+    preview: {
+      // Allow the app to be served from any host.
+      // This is required when hosting the production build with
+      // `vite preview` on platforms like Render/Railway that use
+      // dynamic hostnames (e.g. *.onrender.com).
+      allowedHosts: true,
+    },
   }
 })
