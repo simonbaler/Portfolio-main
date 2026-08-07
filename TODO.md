@@ -1,15 +1,14 @@
-# Portfolio Update Task
+# Deployment Fix — Task List
+
+## Goal
+Fix Render/Railway deployment errors for the Vite + React portfolio.
 
 ## Steps
-
-1. ✅ **Update `portfolioData.js`** — Revise profile title/summary, technical skills categories, projects (add Fake News Detection), internship details, certificates, achievements, soft skills, and languages to match the new resume.
-
-2. ✅ **Update `ContentCreator.jsx`** — Refresh achievements data consumption (3 hackathon wins, 10+ projects, published research).
-
-3. ✅ **Update `Internships.jsx`** — Reflect new "React Frontend Developer Intern" role details.
-
-4. ✅ **Update `SoftSkills.jsx`** — Add new soft skills (Communication, Time Management).
-
-5. ✅ **Update `About.jsx`** — Update bio text and quick stats to match new resume (React/JS/Tailwind icons).
-
-6. ✅ **Verify build & run** — Run dev server and confirm everything works.
+- [x] 1. Investigate build and identify root cause (Node version mismatch, missing deploy config)
+- [x] 2. Add `engines.node` and `start` script to `package.json`
+- [x] 3. Add `base: './'` to `vite.config.js` (fixes asset 404s on subpath hosting)
+- [x] 4. Create `render.yaml` for Render static site deployment
+- [x] 5. Run `npm run build` to confirm clean build (467 modules, success)
+- [x] 6. Verify relative asset paths in `dist/index.html` (`base: './'` working)
+- [ ] 7. Commit and push to GitHub (`origin` = simonbaler/Portfolio-main)
+- [ ] 8. Configure platforms (Node >= 20.19, Render publish dir = `dist`)

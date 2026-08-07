@@ -1,0 +1,13 @@
+# Render web service configuration
+# Serves the statically built Vite app via `vite preview`.
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: simon-baler-portfolio
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20.19.0
